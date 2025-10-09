@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <h1 id="Back to top"><b>Anisha Dutta</b></h1>
+    
+</head>
+
+<body>
+  <header>
+
+
+    <nav>
+      <ul>
+        <li><a href="#Intro">Intro</a></li>
+        <li><a href="#About Me">About Me</a></li>
+        <li><a href="#My Projects">My Projects</a></li>
+        <li><a href="#Technical Skills">Technical Skills</a></li>
+        <li><a href="#Contact Me">Contact Me</a></li>
+        
+      </ul>
+    </nav>
+
+
+    <section class="Intro">
+      <h3 id="Intro" >Welcome to My Portfolio</h3>
+      <p>Hi! I'm Anisha. This is my personal portfolio website . </p>
+     
+    </section>
+
+
+  </header>
+
+  
+  <section class="About Me">
+    <h3 id="About Me">About Me</h3>
+ <img src="https://tse1.explicit.bing.net/th/id/OIP.AAHyvCs2GGcDc7BQEePZZQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Picture of Anisha" width="450" height="450" /><br>
+
+      Hi!<br>
+      I am a BCA cybersecurity student . I am passionate about making creative and vibrant websites that combines the world of coding and art into a fascinating new realm of wonder.
+  </section>
+  <br><br>
+
+
+  <section class="My Projects">
+    <h3 id="My Projects">My Projects</h3>
+    <ul>
+      <li><b>Personal Portfolio: </b> A personal one-page website to showcase your bio,  technical skills and contact details.</li>
+       <li><b>Medium Clone: </b> A simple blog layout that looks like Medium, built only with HTML and CSS. </li>
+       <li><b>Birthday Card: </b>A creative greeting card webpage designed with HTML structure and CSS styling.</li>
+       <li><b>User form: </b>A form webpage with fields like name, email, and message for practicing form handling.</li>
+    </ul>
+  </section>
+<br><br>
+
+
+  <section class="Technical Skills">
+      <h3 id="Technical Skills">Technical Skills</h3>
+      <table border="10" cellspacing="7" cellpadding="10">
+  <tr>
+    <th>Skill</th>
+    <th>Level</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>Beginner</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>Beginner</td>
+  </tr>
+  <tr>
+    <td>Canva</td>
+    <td>Intermediate</td>
+  </tr>
+  <tr>
+    <td>Ibis paint</td>
+    <td>Expert</td>
+  </tr>
+</table>
+
+     
+    </section>
+
+<br><br>
+
+
+
+
+
+    <section class="Contact Me">
+      <h3 id="Contact Me">Contact Me</h3>
+       <form action="/submit-form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your EMAIL"><br><br>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="2" cols="30" required placeholder="Enter message here"></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+    </section>
+
+    <a href="#Back to top ">Back to top</a>
+
+</body>
+</html>
