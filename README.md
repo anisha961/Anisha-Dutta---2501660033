@@ -24,8 +24,9 @@ LAB ASSIGNMENT 2
 LAB ASSIGNMENT 4
 
 <img width="1111" height="1041" alt="image" src="https://github.com/user-attachments/assets/b4491f7f-fa7a-4f3d-8157-83c85b740210" />
-![Uploading image.png…]()
-![Uploading image.png…]()
+<img width="798" height="1037" alt="image" src="https://github.com/user-attachments/assets/07b6b5a0-49a9-4fc8-8749-d026537cb3c4" />
+<img width="825" height="1038" alt="image" src="https://github.com/user-attachments/assets/f41fc4de-b379-4b6b-8c0b-1270a2e3adae" />
+
 
 
 
