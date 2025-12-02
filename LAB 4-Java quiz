@@ -1,0 +1,47 @@
+const quizQuestions = [
+  {
+    question: "What is the name of the girl with telekinetic powers?",
+    answer: "eleven"
+  },
+  {
+    question: "What is the name of the town where Stranger Things takes place?",
+    answer: "hawkins"
+  },
+  {
+    question: "What is the name of the parallel dimension in the show?",
+    answer: "the upside down"
+  },
+  {
+    question: "What food does Eleven love the most?",
+    answer: "eggo"
+  },
+  {
+    question: "Who is the police chief of Hawkins?",
+    answer: "hopper"
+  }
+];
+function normalizeInput(input) {
+  return input.toLowerCase().trim();
+}
+function runQuiz() {
+  let score = 0;
+  for (let i = 0; i < quizQuestions.length; i++) {
+    const current = quizQuestions[i];
+    let userInput = prompt(current.question);
+
+    if (userInput !== null) {
+      const userAnswer = normalizeInput(userInput);
+
+      if (userAnswer === current.answer) {
+        score++;
+        alert("Correct lesgooo!");
+      } else {
+        alert(`Oops wrong answer :(( The correct answer is: ${current.answer}`);
+      }
+    } else {
+      alert("No answer :( Moving to the next question.");
+    }
+  }
+  alert(`Yay you scored ${score} out of ${quizQuestions.length}!`);
+}
+runQuiz();
