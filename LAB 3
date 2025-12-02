@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anisha Dutta | Portfolio</title>
+  <style>
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 2rem auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+header {
+  background-color: #680825;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 5px solid #680825;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffccdd;
+  transform: scale(1.05);
+}
+
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+.profile-pic {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+  animation: rotate 20s linear infinite;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.project-card {
+  background-color: #e6e6e6;
+  border: 1px solid #002041;
+  padding: 1rem;
+  text-align: left;
+  transition: transform 1s ;
+  animation: popIn 0.4s ease forwards;
+}
+
+@keyframes jaadu {
+from {background-color: rgb(255, 218, 5);}
+to {background-color: rgb(241, 240, 240);}
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: red;
+animation-name: jaadu;
+animation-duration: 2s;
+}
+
+.project-card h3 {
+  color: #680825;
+  margin-top: 0;
+}
+
+
+#skills table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#skills th,
+#skills td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+#skills th {
+  background-color: #680825;
+  color: white;
+}
+
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.contact-table td {
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+.contact-table td:first-child {
+  width: 30%;
+  padding: 0.75rem;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  text-align: left;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 2px solid #0056b3;
+}
+
+
+.btn {
+  background-color: #680825;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8a0a33;
+  transform: scale(1.05);
+}
+
+
+footer {
+  background-color: #680825;
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  border-top: 5px solid #680825;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }}
+
+  .profile-pic {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+      <h1>Anisha Dutta</h1>
+      <nav aria-label="Main navigation">
+        <a href="#intro">Intro</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi! I'm Anisha. This is my personal portfolio website.</p>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.AAHyvCs2GGcDc7BQEePZZQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Anisha Dutta smiling" class="profile-pic" />
+        <p>
+          I am a BCA cybersecurity student passionate about blending code and creativity to build vibrant, interactive websites.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>A one-page site to showcase my bio, skills, and contact info.</p>
+          </div>
+          <div class="project-card">
+            <h3>Travel Vlog</h3>
+            <p>A blog layout sharing travel experiences and location details.</p>
+          </div>
+          <div class="project-card">
+            <h3>Birthday Card</h3>
+            <p>A creative greeting card webpage using HTML and CSS.</p>
+          </div>
+          <div class="project-card">
+            <h3>Club Registration Form</h3>
+            <p>A student data form built with HTML and CSS.</p>
+          </div>
+          <div class="project-card">
+            <h3>Poster making</h3>
+            <p>A thoughtful poster reinforcing the importance of reuse, reduce, recycle.</p>
+          </div>
+          <div class="project-card">
+            <h3>Article on cybersecurity</h3>
+            <p>The need and implementation of cybersecurity.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <table>
+          <thead>
+            <tr><th>Skill</th><th>Level</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>HTML</td><td>Beginner</td></tr>
+            <tr><td>CSS</td><td>Beginner</td></tr>
+            <tr><td>Canva</td><td>Intermediate</td></tr>
+            <tr><td>Ibis Paint</td><td>Expert</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <table class="contact-table">
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td><input type="text" id="name" name="name" required placeholder="Enter your name" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="email" id="email" name="email" required placeholder="Enter your email" /></td>
+            </tr>
+            <tr>
+              <td><label for="message">Message</label></td>
+              <td><textarea id="message" name="message" rows="4" required placeholder="Enter message here"></textarea></td>
+            </tr>
+          </table>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#header" class="btn back-to-top">Back to Top</a>
+    </footer>
+  </div>
+</body>
+</html>
